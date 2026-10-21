@@ -15,7 +15,7 @@ export default function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <header className="garden-header-wrap">
-      <nav className={`garden-header ${menuOpen ? 'garden-menu-open' : ''}`} aria-label="Navegación principal">
+      <nav className={`garden-header flex items-center justify-between ${menuOpen ? 'garden-menu-open' : ''}`} aria-label="Navegación principal">
         <a className="garden-brand" href="#home" aria-label="Inicio">AE<span>.</span></a>
         <div className="garden-nav-links">{links.map(([label, href]) => <a key={href} href={href} onClick={() => setMenuOpen(false)}>{label}</a>)}</div>
         <div className="garden-header-actions"><ThemeToggle /><a className="garden-contact-link" href="#contact">Contacto <span aria-hidden="true">↗</span></a></div>
