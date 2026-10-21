@@ -19,6 +19,6 @@ analysis-report.md
 *.p12
 *.pem
 *.log
-CV_SOURCE_DIR
 
+tsconfig.tsbuildinfo
 tsconfig.tsbuildinfo

@@ -1,30 +1,23 @@
 # Portafolio profesional · Angel Eduardo Domínguez Martínez
 
-Portafolio en Next.js App Router, React, TypeScript y Emotion. El contenido visible se mantiene en `src/data/profile.json`; los CV fuente permanecen locales.
+Sitio personal con Next.js App Router, React, TypeScript y Emotion. La interfaz sigue una estética Digital Garden: composición Bento, navegación compacta, tema claro/oscuro, trayectoria profesional y mapa de tecnologías.
 
-## Requisitos
+## Requisitos y desarrollo
 
-- Node.js 20.9 o posterior (requisito de Next.js 16).
-- npm.
-
-## Desarrollo
+- Node.js 20.9 o posterior y npm.
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Analizar CV localmente
+## Datos profesionales y privacidad
 
-Coloca copias de CV en `private/cv-source/` (PDF, DOCX, TXT, Markdown o HTML) y ejecuta:
+El contenido público revisado se mantiene en `src/data/portfolio.ts`. Los documentos fuente deben permanecer en `private/cv-source/`, una carpeta excluida de Git. Para generar localmente un informe de señales a partir de CV compatibles, ejecuta `npm run analyze-cv`; el proceso no modifica el contenido público automáticamente. Contrasta los documentos originales y revisa `analysis-report.md` antes de editar los datos del sitio.
 
-```bash
-npm run analyze-cv
-```
+No se publica correo ni teléfono porque no hay autorización explícita. La sección de notas muestra un estado vacío; no se inventaron artículos, métricas, premios ni proyectos. El estado de obtención de los trayectos Cisco queda señalado como pendiente de confirmación.
 
-Opcionalmente establece `CV_SOURCE_DIR` para elegir otra carpeta. El script genera `analysis-report.md` localmente y detecta texto/señales; no modifica ni publica automáticamente el perfil. Revisa el informe y actualiza manualmente `src/data/profile.json`. Los originales y el informe están excluidos de Git. No uses rutas con archivos originales en el despliegue.
-
-## Comprobaciones y producción
+## Comprobaciones
 
 ```bash
 npm run typecheck
@@ -32,18 +25,14 @@ npm run build
 npm run start
 ```
 
-## Despliegue a Vercel
+## Despliegue en Vercel
 
-Sube este repositorio a GitHub e impórtalo en Vercel. Usa Node.js 20.9+. No se requiere la carpeta local de CV durante el build. Configura `NEXT_PUBLIC_SITE_URL` con el dominio final para metadatos, sitemap y robots. `.env.example` documenta la configuración; no subas secretos.
+El repositorio se despliega desde GitHub. Cada push a `main` inicia un despliegue de producción en Vercel. Configura `NEXT_PUBLIC_SITE_URL` con el dominio definitivo para canonical metadata, sitemap y robots. El build no requiere acceso a los documentos locales.
 
-## Revisión de privacidad antes de publicar
+## Estructura principal
 
-- Verifica el contenido de `src/data/profile.json`; la lista es una selección pública deliberada.
-- No se publicaron teléfono ni correo del CV porque el encargo no autorizó expresamente divulgarlos.
-- El PDF `public/cv/` no se incluye: agrega solo una versión saneada y expresamente autorizada antes de habilitar la descarga.
-- Contacto y formulario quedan como estado vacío elegante hasta autorizar datos/configurar un proveedor. Nunca agregues claves secretas al navegador.
-- La sección Network Lab es demostrativa y no ejecuta comandos ni contacta redes reales.
-
-## Emotion y SSR
-
-`src/lib/emotion-registry.tsx` registra los estilos creados durante el renderizado con `useServerInsertedHTML`, siguiendo el patrón de integración Emotion/App Router. CSS global aporta la composición de la interfaz; Emotion se usa en componentes reutilizables.
+- `src/app/`: layout, página, metadatos y estilos globales.
+- `src/components/digital-garden/`: encabezado, cambio de tema, Bento Grid, fichas de proyecto, trayectoria y tecnologías.
+- `src/data/portfolio.ts`: contenido profesional revisado.
+- `scripts/analyze-cv.ts`: analizador local de documentos.
+- `private/cv-source/`: carpeta local excluida del repositorio.
