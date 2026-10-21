@@ -1,0 +1,193 @@
+{
+    "name":  "Angel Eduardo Domínguez Martínez",
+    "headline":  "Desarrollador web · Ingeniero en Redes y Telecomunicaciones",
+    "location":  "Guadalajara, Jalisco, México",
+    "summary":  "Desarrollador web e ingeniero en redes y telecomunicaciones con experiencia en plataformas empresariales, integración de servicios, soporte de infraestructura y redes LAN/WAN. Trabaja con PHP y Laravel, JavaScript y tecnologías web 3D.",
+    "experience":  [
+                       {
+                           "role":  "Desarrollador Web",
+                           "company":  "Total Ground",
+                           "period":  "Octubre 2025 – Actualidad",
+                           "location":  "Guadalajara, Jalisco",
+                           "details":  [
+                                           "Desarrollo y mantenimiento de la plataforma empresarial, catálogo industrial y CMS.",
+                                           "Implementación de funcionalidades con PHP, Laravel, Blade y Livewire.",
+                                           "Integración de visores 3D con Three.js y WebGL, asistente con Google Gemini y envío de prospectos a Monday.com.",
+                                           "Mantenimiento de funciones multilingües, autenticación de dos factores, auditoría y gestión de contenido."
+                                       ],
+                           "technologies":  [
+                                                "PHP",
+                                                "Laravel",
+                                                "Livewire",
+                                                "Three.js",
+                                                "WebGL",
+                                                "Google Gemini API",
+                                                "Monday.com API"
+                                            ]
+                       },
+                       {
+                           "role":  "Practicante de Instalaciones y Configuración TI",
+                           "company":  "OceanTech S.A. de C.V.",
+                           "period":  "Julio – Diciembre 2024",
+                           "location":  "Guadalajara, Jalisco",
+                           "details":  [
+                                           "Instalación de cableado estructurado y configuración de redes LAN/WAN.",
+                                           "Apoyo en soluciones de CCTV y control de acceso."
+                                       ],
+                           "technologies":  [
+                                                "LAN",
+                                                "WAN",
+                                                "CCTV",
+                                                "Cableado estructurado"
+                                            ]
+                       },
+                       {
+                           "role":  "Soporte en el Departamento de Sistemas",
+                           "company":  "Ayuntamiento Municipal",
+                           "period":  "Agosto – Diciembre 2023",
+                           "location":  "Taxco de Alarcón, Guerrero",
+                           "details":  [
+                                           "Mantenimiento preventivo y correctivo de equipos de cómputo.",
+                                           "Instalación de cableado de red y atención de incidencias de conectividad y software."
+                                       ],
+                           "technologies":  [
+                                                "Soporte técnico",
+                                                "Redes"
+                                            ]
+                       }
+                   ],
+    "education":  [
+                      {
+                          "program":  "Ingeniería en Redes y Telecomunicaciones",
+                          "institution":  "Universidad Politécnica del Estado de Guerrero",
+                          "period":  "2021 – 2025",
+                          "status":  "Titulado"
+                      },
+                      {
+                          "program":  "Técnico en Programación",
+                          "institution":  "CBTis 82",
+                          "period":  "2019 – 2021",
+                          "status":  "Formación técnica"
+                      }
+                  ],
+    "skills":  [
+                   {
+                       "category":  "Desarrollo web",
+                       "items":  [
+                                     "PHP 8.2+",
+                                     "Laravel 12",
+                                     "Livewire 4",
+                                     "Blade",
+                                     "JavaScript ES6+",
+                                     "HTML5",
+                                     "CSS3"
+                                 ]
+                   },
+                   {
+                       "category":  "Experiencias 3D y multimedia",
+                       "items":  [
+                                     "Three.js",
+                                     "WebGL",
+                                     "GLTF/GLB",
+                                     "GLTFLoader",
+                                     "OrbitControls",
+                                     "VideoTexture"
+                                 ]
+                   },
+                   {
+                       "category":  "APIs e integraciones",
+                       "items":  [
+                                     "REST",
+                                     "Google Gemini API",
+                                     "Monday.com API",
+                                     "Google reCAPTCHA"
+                                 ]
+                   },
+                   {
+                       "category":  "Datos y herramientas",
+                       "items":  [
+                                     "MySQL",
+                                     "MariaDB",
+                                     "Git",
+                                     "Composer",
+                                     "XAMPP",
+                                     "Apache"
+                                 ]
+                   },
+                   {
+                       "category":  "Redes e infraestructura",
+                       "items":  [
+                                     "LAN / WAN / WLAN",
+                                     "Cisco",
+                                     "DHCP",
+                                     "DNS",
+                                     "NAT",
+                                     "VPN",
+                                     "Firewalls",
+                                     "CCTV",
+                                     "Cableado estructurado"
+                                 ]
+                   },
+                   {
+                       "category":  "Virtualización y servicios",
+                       "items":  [
+                                     "VMware",
+                                     "Hyper-V",
+                                     "VirtualBox",
+                                     "cPanel"
+                                 ]
+                   },
+                   {
+                       "category":  "Seguridad web",
+                       "items":  [
+                                     "Autenticación 2FA / TOTP",
+                                     "Auditoría de actividad",
+                                     "Protección anti-spam"
+                                 ]
+                   }
+               ],
+    "certifications":  [
+                           "Switching, Routing, and Wireless Essentials · Cisco",
+                           "Networking Essentials · Cisco",
+                           "Cyber Threat Management · Cisco",
+                           "Junior Cybersecurity Analyst Career Path · Cisco"
+                       ],
+    "languages":  [
+                      {
+                          "name":  "Español",
+                          "level":  "Nativo"
+                      },
+                      {
+                          "name":  "Inglés",
+                          "level":  "Intermedio"
+                      }
+                  ],
+    "projects":  [
+                     {
+                         "name":  "Plataforma web Total Ground",
+                         "category":  "Desarrollo web",
+                         "description":  "Plataforma empresarial y catálogo digital de productos industriales con CMS, búsqueda reactiva, integraciones y visores 3D.",
+                         "contribution":  "Desarrollo y mantenimiento de funcionalidades e integraciones.",
+                         "technologies":  [
+                                              "Laravel",
+                                              "Livewire",
+                                              "Three.js",
+                                              "WebGL",
+                                              "Gemini API",
+                                              "Monday.com API"
+                                          ],
+                         "url":  "https://www.totalground.com/"
+                     }
+                 ],
+    "publicContact":  {
+                          "email":  null,
+                          "linkedin":  null,
+                          "github":  null,
+                          "portfolio":  null
+                      },
+    "publicationNotes":  [
+                             "Correo, teléfono y URL de portafolio omitidos hasta autorización expresa.",
+                             "Experiencia y proyectos basados en el CV HTML identificado como curriculum-angel-dominguez.html.",
+                             "El PDF CV _ Angel_Dominguez-2026.pdf no pudo extraerse localmente; revisar el informe antes de actualizar datos."
+                         ]
+}
