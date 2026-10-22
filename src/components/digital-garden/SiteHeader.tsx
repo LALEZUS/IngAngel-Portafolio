@@ -8,6 +8,7 @@ const links = [
   ['Proyectos', '#projects'],
   ['Trayectoria', '#journey'],
   ['Tecnologías', '#tech'],
+  ['Mapa', '#connectivity'],
   ['Notas', '#notes'],
 ];
 

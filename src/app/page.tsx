@@ -3,6 +3,7 @@ import BentoGrid from '@/components/digital-garden/BentoGrid';
 import JourneyTimeline from '@/components/digital-garden/JourneyTimeline';
 import SiteHeader from '@/components/digital-garden/SiteHeader';
 import TechSpectrum from '@/components/digital-garden/TechSpectrum';
+import WorldMapSection from '@/components/digital-garden/WorldMapSection';
 
 function HeroMark() {
   return <div className="garden-hero-art" aria-hidden="true"><div className="garden-orbit garden-orbit-a"/><div className="garden-orbit garden-orbit-b"/><div className="garden-orbit garden-orbit-c"/><div className="garden-hero-core">AE<span>.</span></div><span className="garden-orbit-dot garden-dot-a"/><span className="garden-orbit-dot garden-dot-b"/><span className="garden-orbit-dot garden-dot-c"/><span className="garden-art-caption">REDES · SISTEMAS · WEB</span><span className="garden-art-axis"/></div>;
@@ -40,6 +41,8 @@ export default function HomePage() {
         <div className="garden-section-heading"><div><span className="garden-section-index">03 / MAPA TÉCNICO</span><h2 id="tech-title">Tech spectrum</h2></div><p>Tecnologías respaldadas por experiencia y formación.</p></div>
         <TechSpectrum />
       </section>
+
+      <WorldMapSection />
 
       <section className="garden-section garden-container" id="notes" aria-labelledby="notes-title">
         <div className="garden-section-heading"><div><span className="garden-section-index">04 / DIGITAL GARDEN</span><h2 id="notes-title">Notas técnicas</h2></div><p>Un espacio para compartir ideas y aprendizajes.</p></div>
